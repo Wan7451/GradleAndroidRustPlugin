@@ -75,9 +75,11 @@ internal abstract class RustBuildTask : DefaultTask() {
 
             commandLine("cargo")
 
+            args("ndk")
+            args("--target", abi.androidName)
             args("build")
-            args("--lib")
-            args("--target", abi.rustTargetTriple)
+            //args("--lib")
+            //args("--target", abi.rustTargetTriple)
 
             if (rustProfile.isNotEmpty()) {
                 args("--profile", rustProfile)

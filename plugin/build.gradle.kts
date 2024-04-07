@@ -5,7 +5,7 @@ plugins {
     id("com.gradle.plugin-publish") version "1.1.0"
 }
 
-group = "io.github.MatrixDev.android-rust"
+group = "io.github.Wan7451.android-rust"
 version = "0.3.2"
 
 java {
@@ -19,16 +19,16 @@ repositories {
 }
 
 pluginBundle {
-    website = "https://github.com/MatrixDev/GradleAndroidRustPlugin"
-    vcsUrl = "https://github.com/MatrixDev/GradleAndroidRustPlugin.git"
+    website = "https://github.com/Wan7451/GradleAndroidRustPlugin"
+    vcsUrl = "https://github.com/Wan7451/GradleAndroidRustPlugin.git"
     tags = listOf("android", "rust", "jni")
 }
 
 gradlePlugin {
     plugins {
         create("androidRust") {
-            id = "io.github.MatrixDev.android-rust"
-            implementationClass = "dev.matrix.agp.rust.AndroidRustPlugin"
+            id = "io.github.Wan7451.android-rust"
+            implementationClass = "dev.Wan7451.agp.rust.AndroidRustPlugin"
             displayName = "Plugin for building Rust with Cargo in Android projects"
             description = "This plugin helps with building Rust JNI libraries with Cargo for use in Android projects."
         }
