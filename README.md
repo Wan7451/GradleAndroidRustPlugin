@@ -3,7 +3,7 @@
 This plugin helps with building Rust JNI libraries with Cargo for use in Android projects.
 
 Link to the plugin on the gradle repository:
-https://plugins.gradle.org/plugin/io.github.MatrixDev.android-rust
+https://plugins.gradle.org/plugin/io.github.Wan7451.android-rust
 
 # Usage
 
@@ -16,7 +16,7 @@ buildscript {
     }
 
     dependencies {
-        classpath("io.github.MatrixDev.android-rust:plugin:0.3.2")
+        classpath("io.github.Wan7451.android-rust:plugin:0.3.2")
     }
 }
 ```
@@ -25,7 +25,7 @@ Add plugin to the module's `build.gradle.kts` file
 
 ```kotlin
 plugins {
-    id("io.github.MatrixDev.android-rust")
+    id("io.github.Wan7451.android-rust")
 }
 ```
 
